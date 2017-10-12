@@ -11,9 +11,10 @@ Simple RESTful web standalone application developed using Spring Boot.
  * Maven
  
 ## Description
-File Upload API is a RESTful API in Spring Boot that is used to upload a file with a few meta data fields such as the file name, file type, file size, file path and upload date and time. The file is saved in an in memory database - HSQL and the content of the file is saved at the UPLOAD_PATH given in the FileMetaDataUtility class. 
+File Upload API is a RESTful API in Spring Boot that is used to upload a file with a few meta data fields such as the file name, file type, file size, file path and upload date and time details. The file is saved in an in-memory database - HSQL and the content of the file is saved at the value specifies in the application.properties file called upload_directory. Also, the size limit of the file can be changed at the application.properties file.
 
-The API exposes the end points using the following URI's:
+This API exposes the end points using the following URI's:
+
   * File API
   
   |Request Method   |         URI                 |         Description|
@@ -24,7 +25,8 @@ The API exposes the end points using the following URI's:
      
 ## Steps to run:
  - Clone or download the project.
- - Change the file upload path(UPLOAD_PATH) in the FileMetaDataUtility class.
+ - Change the file upload path(upload_directory) in the application.properties file under Resources.
+ - Changed the file size according to your usage in the application.properties file.
  - Download Postman chrome plugin or any other REST client testing plugins to test the File Upload API.
  - Run the Spring Boot application in any IDE.
  - Select the file attribute in the body when doing a POST to select the file to upload.
