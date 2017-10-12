@@ -48,7 +48,7 @@ public class FileController {
 	
 	//Create a file
 	@RequestMapping(value="/files", method=RequestMethod.POST)
-	public int uploadFile(@RequestParam(value="file", required = false) MultipartFile file, HttpServletResponse response) throws IOException {
+	public int uploadFile(@RequestParam(value="uploadFile", required = false) MultipartFile file, HttpServletResponse response) throws IOException {
 		File createdfile = fileService.uploadFile(file);
 		response.setStatus(HttpStatus.CREATED.value());
 		return createdfile.getId();
