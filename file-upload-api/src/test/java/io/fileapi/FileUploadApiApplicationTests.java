@@ -1,8 +1,5 @@
 package io.fileapi;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.fileUpload;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import java.util.List;
 
 import org.junit.Assert;
