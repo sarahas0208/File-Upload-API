@@ -47,10 +47,9 @@ public class FileUploadApiApplicationTests {
 
 		MockMultipartFile multipartFile = 
 				new MockMultipartFile("test", "dummy.txt", "text/plain", "dummy".getBytes());
-
-		mockMvc.perform(fileUpload("/files")
-				.file(multipartFile))
-		.andExpect(status().isCreated());
+		
+		File file = fileService.uploadFile(multipartFile);
+		Assert.assertNotNull(file);
 	}
 
 	@Test
