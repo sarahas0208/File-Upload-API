@@ -19,9 +19,9 @@ This API exposes the end points using the following URI's:
   
   |Request Method   |         URI                 |         Description|
   |-----------------|-----------------------------|-------------------------------------------------|
-  |   - GET         |        /files               |        Gets all the files|
-  |   - GET         |        /files/{id}          |        Gets a particular file with the given id|
-  |   - POST        |        /files               |        Creates a new file|
+  |    GET         |        /files               |        Gets all the files|
+  |    GET         |        /files/{id}          |        Gets a particular file with the given id|
+  |    POST        |        /files               |        Creates a new file|
      
 ## Steps to run:
  - Clone or download the project.
